@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59156cf9-d9c5-4a38-8c19-0bb4a4498167" name="Changes" comment="add class Main and some files .txt">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Финальный проект.txt" afterDir="false" />
+    <list default="true" id="59156cf9-d9c5-4a38-8c19-0bb4a4498167" name="Changes" comment="add description">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/folders/user/selection/UserSelection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700410732317</updated>
-      <workItem from="1700410733370" duration="4806000" />
+      <workItem from="1700410733370" duration="6520000" />
     </task>
     <task id="LOCAL-00001" summary="add class Main and some files .txt">
       <option name="closed" value="true" />
@@ -92,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700418349719</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add description">
+      <option name="closed" value="true" />
+      <created>1700419094302</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700419094302</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add class Main and some files .txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class Main and some files .txt" />
+    <MESSAGE value="add description" />
+    <option name="LAST_COMMIT_MESSAGE" value="add description" />
   </component>
 </project>
