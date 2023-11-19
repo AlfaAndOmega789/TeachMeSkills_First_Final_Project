@@ -1,4 +1,4 @@
-package org.example.folders.user.selection;
+package org.example.user.selection;
 
 import java.io.BufferedReader;
 import java.io.IOException;
