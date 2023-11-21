@@ -14,9 +14,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DOMProjectParser {
+    
+    private static final String PATH_INPUT = "src\\main\\java\\org\\example\\folders\\input\\";
+    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\folders\\archive\\";
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
         List<String> list = parsingFile(
-                "src\\main\\java\\org\\example\\folders\\input\\first.txt");
+                PATH_INPUT + "first.txt");
 
         for(String str : list){
             System.out.println(str);
@@ -24,9 +27,9 @@ public class DOMProjectParser {
     }
 
     /**
-     *
+     * Метод парсит xml файлы и вовращает list
      * @param str - абсолютный путь к файлу
-     * @return - list  с тремя значениями
+     * @return - возвращает list  с тремя значениями в указанном порядке
      * 1. Номер счёта отправителя
      * 2. Номер счёта получателя
      * 3. Сумма перевода
@@ -36,7 +39,6 @@ public class DOMProjectParser {
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
-
         Document document = builder.parse(new File(str));
 
         Node transferMoneyRequestNode = document.getFirstChild();
@@ -96,21 +98,16 @@ public class DOMProjectParser {
         NodeList transferChilds = transferNode.getChildNodes();
         String sumTransfer = null;
 
-//        Integer sumTransfer = null;
-
         for(int i = 0 ; i  < transferChilds.getLength(); i++){
             if(transferChilds.item(i).getNodeType() != Node.ELEMENT_NODE){
                 continue;
             }
 
-            if(transferChilds.item(i).getNodeName().equals("SUM"));{
+            if(transferChilds.item(i).getNodeName().equals("SUM")){
                 sumTransfer = transferChilds.item(i).getTextContent(); //сумма операции
                 list.add(sumTransfer);
-//                sumTransfer = Integer.parseInt(transferChilds.item(i).getTextContent());
             }
-
         }
         return list;
     }
-
 }
