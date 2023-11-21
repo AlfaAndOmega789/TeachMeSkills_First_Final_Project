@@ -7,11 +7,6 @@ import java.util.List;
 public class GenerateListTXT {
     public static final String PATH_INPUT = "src\\main\\java\\org\\example\\folders\\input";
 
-    public static void main(String[] args) {
-        for(String str : generateListTxt(PATH_INPUT)){
-            System.out.println(str);
-        }
-    }
 
     /**
      * Метод проверяет наличие файлов формата .txt в педанном каталоге,
@@ -19,7 +14,7 @@ public class GenerateListTXT {
      * @param path - путь к каталогу
      * @return - List<String>
      */
-    public static List<String> generateListTxt(String path){
+    public List<String> generateListTxt(String path){
         List<String> txtFileNames = new ArrayList<>();
 
         File directory = new File(path);

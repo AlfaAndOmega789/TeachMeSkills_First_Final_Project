@@ -1,10 +1,14 @@
 package org.example.user.selection;
 
+import org.example.check.file.CheckFileInDirectoryInput;
+import org.example.list.txt.GenerateListTXT;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class UserSelection {
+    public static final String PATH_INPUT = "src\\main\\java\\org\\example\\folders\\input";
 
     /**
      * Метод просит ввести пользователя значение в консоль
@@ -26,8 +30,21 @@ public class UserSelection {
             System.out.println();
 
             if(variableEnteredByTheUser == 1){
-                //вызов операции парсинга файлов перевода из input,
-                somevalue = false;
+                CheckFileInDirectoryInput check = new CheckFileInDirectoryInput();
+                GenerateListTXT listTXT = new GenerateListTXT();
+
+                if(check.checkFileTxtInDirectory(listTXT.generateListTxt(PATH_INPUT))){
+                    System.out.println("В папке input отсутствуют файлы формата .txt \n" +
+                    "Завершение работы программы!");
+                    break;
+                }else {
+                    //вызов операции парсинга файлов .txt
+                    //переложить спаршенный файл в директорию за сегодняшнюю дату
+                }
+
+
+
+
             }
             else if(variableEnteredByTheUser == 2){
                 // вызов операции вывода списка всех переводов из файла-отчета.
