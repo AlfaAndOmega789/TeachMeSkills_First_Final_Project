@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59156cf9-d9c5-4a38-8c19-0bb4a4498167" name="Changes" comment="add description">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/count/file/CountFileInDirectory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/create/file/CreateFileReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/create/path/CreatePathInArchive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/name/file/GenerateOutputFileName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/create/info/GenerateInfoInFileReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/list/txt/GenerateListTXT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parsing/file/DOMProjectParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parsing/file/DOMProjectParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/count/file/CountFileInDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/counter/CountFileInDirectory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/create/file/CreateFileReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/create/file/CreateFileReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/name/file/GenerateOutputFileName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/name/file/GenerateOutputFileName.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,26 +45,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivank/IdeaProjects/TeachMeSkills_First_Final_Project/src/main/java/org/example&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Projects/Parser_from_XML_to_CSV",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ivank\IdeaProjects\TeachMeSkills_First_Final_Project\src\main\java\org\example" />
@@ -74,7 +74,20 @@
       <recent name="C:\Users\ivank\IdeaProjects\TeachMeSkills_First_Final_Project\src\main\java\org\example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GenerateOutputFileName">
+  <component name="RunManager" selected="Application.GenerateListTXT">
+    <configuration name="CountFileInDirectory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.counter.CountFileInDirectory" />
+      <module name="TeachMeSkills_First_Final_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.counter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateFileReport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.create.file.CreateFileReport" />
       <module name="TeachMeSkills_First_Final_Project" />
@@ -101,6 +114,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GenerateListTXT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.list.txt.GenerateListTXT" />
+      <module name="TeachMeSkills_First_Final_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.list.txt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GenerateOutputFileName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.name.file.GenerateOutputFileName" />
       <module name="TeachMeSkills_First_Final_Project" />
@@ -114,25 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="TeachMeSkills_First_Final_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.create.file.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GenerateListTXT" />
         <item itemvalue="Application.GenerateOutputFileName" />
+        <item itemvalue="Application.CountFileInDirectory" />
         <item itemvalue="Application.CreateFileReport" />
         <item itemvalue="Application.DOMProjectParser" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

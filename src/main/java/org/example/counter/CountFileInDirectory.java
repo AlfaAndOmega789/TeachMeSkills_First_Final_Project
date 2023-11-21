@@ -1,4 +1,4 @@
-package org.example.count.file;
+package org.example.counter;
 
 import java.io.File;
 
@@ -13,13 +13,13 @@ public class CountFileInDirectory {
     public int countFileReportInDirectory(String directoryPath){
         File directory = new File(directoryPath);
         File[] files = directory.listFiles();
-        int countMerch = 1;
+        int countReport = 1;
 
         for(File file : files) {
             if(file.getName().contains("REPORT")){
-                countMerch++;
+                countReport++;
             }
         }
-        return countMerch;
+        return countReport;
     }
 }
