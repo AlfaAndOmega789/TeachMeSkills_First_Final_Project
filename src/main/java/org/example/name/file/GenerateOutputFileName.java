@@ -30,7 +30,7 @@ public class GenerateOutputFileName {
     }
 
     /**
-     * @return - дату в виде строки, ножного формата
+     * @return - дату в виде строки, нужного формата
      */
     private static String getCurrentDate() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
