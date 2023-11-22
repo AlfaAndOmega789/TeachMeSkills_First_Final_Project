@@ -18,7 +18,8 @@ public class DOMProjectParser {
     private static final String PATH_INPUT = "src\\main\\java\\org\\example\\folders\\input\\";
     private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\folders\\archive\\";
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
-        List<String> list = parsingFile(
+        DOMProjectParser domProjectParser = new DOMProjectParser();
+        List<String> list = domProjectParser.parsingFile(
                 PATH_INPUT + "first.txt");
 
         for(String str : list){
@@ -34,7 +35,7 @@ public class DOMProjectParser {
      * 2. Номер счёта получателя
      * 3. Сумма перевода
      */
-    public static List<String> parsingFile(String str) throws ParserConfigurationException, IOException, SAXException {
+    public List<String> parsingFile(String str) throws ParserConfigurationException, IOException, SAXException {
         List<String> list = new ArrayList<>();
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();

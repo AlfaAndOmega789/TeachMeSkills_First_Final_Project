@@ -11,5 +11,4 @@ public class CheckFileInDirectoryInput {
     public boolean checkFileTxtInDirectory(List<String> list){
         return list.size() == 0;
     }
-
 }

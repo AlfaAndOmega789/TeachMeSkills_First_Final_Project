@@ -7,7 +7,6 @@ import java.util.List;
 public class GenerateListTXT {
     public static final String PATH_INPUT = "src\\main\\java\\org\\example\\folders\\input";
 
-
     /**
      * Метод проверяет наличие файлов формата .txt в педанном каталоге,
      * в случае их наличия, добавляет файлы в List<String> и возвращает его
