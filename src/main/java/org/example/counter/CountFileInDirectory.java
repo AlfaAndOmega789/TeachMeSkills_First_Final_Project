@@ -16,7 +16,7 @@ public class CountFileInDirectory {
         int countReport = 1;
 
         for(File file : files) {
-            if(file.getName().contains("REPORT")){
+            if(file.getName().contains("REPORT_20")){
                 countReport++;
             }
         }

@@ -7,26 +7,30 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class GenerateOutputFileName {
-    private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\folders\\archive\\";
 
-    public static void main(String[] args) {
-//        System.out.println(createFileNameReport());
+    /**
+     *
+     * @param PATH_ARCHIVE - путь к каталогу
+     * @return - имя файла в виде строки
+     */
+    public String createFileNameReportGeneral(String PATH_ARCHIVE){
+        return "FILE_REPORT_GENERAL_" + getCurrentDate() + ".txt";
     }
 
     /**
      * Метод создает название файла
      * @return - название в виде строки
      */
-    public static String createFileNameReport(String PATH_ARCHIVE){
+    public static String createFileNameReports(String PATH_ARCHIVE){
         CountFileInDirectory count = new CountFileInDirectory();
         String formattedCounter = String.format("%03d",
                 count.countFileReportInDirectory(PATH_ARCHIVE));
 
-        return "FILE_REPORT_" + getCurrentDate() + "_" + formattedCounter + ".txt";
+        return "FILE_REPORT_" + getCurrentDate() + "_" + formattedCounter +  ".txt";
     }
 
     /**
-     * @return - дату в виде строки
+     * @return - дату в виде строки, ножного формата
      */
     private static String getCurrentDate() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");

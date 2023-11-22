@@ -11,6 +11,5 @@ public class Main {
         UserSelection userSelection = new UserSelection();
         userSelection.userSelection();
 
-
     }
 }

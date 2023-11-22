@@ -16,7 +16,6 @@ public class UserSelection {
     static CheckFileInDirectoryInput check = new CheckFileInDirectoryInput();
     static GenerateListTXT listTXT = new GenerateListTXT();
     static boolean someValue = true;
-
     /**
      * Метод просит ввести пользователя значение в консоль
      * @throws IOException
@@ -57,6 +56,8 @@ public class UserSelection {
             else if(variableEnteredByTheUser == 2){
                 // вызов операции вывода списка всех переводов из файла-отчета.
                 someValue = false;
+            }else if(variableEnteredByTheUser == 3){
+                //при вводе тройки, юзер выбирает дату и номер чека на выбор(этот выбор предлагает в консоли)
             }else{
                 System.out.print("Вы ввели значение отличное от 1 или 2, повторите ввод снова:");
             }
