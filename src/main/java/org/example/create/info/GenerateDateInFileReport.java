@@ -3,7 +3,7 @@ package org.example.create.info;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class GenerateInfoInFileReport {
+public class GenerateDateInFileReport {
 
     /**
      * Метод будет использован в файле-отчете(дата совершения операции)

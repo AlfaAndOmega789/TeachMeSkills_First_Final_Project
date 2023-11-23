@@ -1,17 +1,18 @@
 package org.example.create.file;
 
-import org.example.name.file.GenerateOutputFileName;
+import org.example.name.file.GenerateArchiveFileName;
+
 
 import java.io.File;
 import java.io.IOException;
 
 public class CreateFileReports {
-    static GenerateOutputFileName generate = new GenerateOutputFileName();
+    static GenerateArchiveFileName generate = new GenerateArchiveFileName();
     private static final String PATH_ARCHIVE = "src\\main\\java\\org\\example\\folders\\archive\\";
 
     public static void main(String[] args) throws IOException {
 //        createFileReportNumber();
-        createFileReportGeneral();
+//        createFileReportGeneral();
     }
 
     /**
@@ -30,8 +31,8 @@ public class CreateFileReports {
      * Создание GENERAL файла отчета
      * @throws IOException
      */
-    public static void createFileReportGeneral() throws IOException {
-        String str = PATH_ARCHIVE + generate.createFileNameReportGeneral(PATH_ARCHIVE);
+    public void createFileReportGeneral(String PATH_ARCHIVE) throws IOException {
+        String str = PATH_ARCHIVE + generate.createNameFileReportGeneral(PATH_ARCHIVE);
         File file = new File(str);
         file.createNewFile();
     }

@@ -28,12 +28,13 @@ public class DOMProjectParser {
     }
 
     /**
-     * Метод парсит xml файлы и вовращает list
+     * Метод парсит xml файлы и возвращает list
      * @param str - абсолютный путь к файлу
-     * @return - возвращает list  с тремя значениями в указанном порядке
+     * @return - возвращает list с четырьмя значениями в указанном порядке
      * 1. Номер счёта отправителя
-     * 2. Номер счёта получателя
-     * 3. Сумма перевода
+     * 2. Сумма денежных средств на счёте отправителя
+     * 3. Номер счёта получателя
+     * 4. Сумма перевода
      */
     public List<String> parsingFile(String str) throws ParserConfigurationException, IOException, SAXException {
         List<String> list = new ArrayList<>();
@@ -70,15 +71,19 @@ public class DOMProjectParser {
 
         NodeList senderChilds = senderNode.getChildNodes();
         String senderAccountNumber = null;
+        String amountInTheSenderAccount = null;
 
         for(int i = 0; i < senderChilds.getLength();i++){
             if(senderChilds.item(i).getNodeType() != Node.ELEMENT_NODE){
                 continue;
             }
-
             if(senderChilds.item(i).getNodeName().equals("SenderAccountNumber")){
                 senderAccountNumber = senderChilds.item(i).getTextContent(); //номер счёта отправителя
                 list.add(senderAccountNumber);
+            }
+            if(senderChilds.item(i).getNodeName().equals("USAmountOfMoneyInTheAccountSender")){
+                amountInTheSenderAccount = senderChilds.item(i).getTextContent(); //кол-во денежных средств на счёте отправителя
+                list.add(amountInTheSenderAccount);
             }
         }
 

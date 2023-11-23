@@ -1,19 +1,18 @@
 package org.example.name.file;
 
 import org.example.counter.CountFileInDirectory;
-import org.example.create.path.CreatePathInArchive;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class GenerateOutputFileName {
+public class GenerateArchiveFileName {
 
     /**
      *
      * @param PATH_ARCHIVE - путь к каталогу
      * @return - имя файла в виде строки
      */
-    public String createFileNameReportGeneral(String PATH_ARCHIVE){
+    public String createNameFileReportGeneral(String PATH_ARCHIVE){
         return "FILE_REPORT_GENERAL_" + getCurrentDate() + ".txt";
     }
 

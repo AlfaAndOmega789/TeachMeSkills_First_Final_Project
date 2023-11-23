@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59156cf9-d9c5-4a38-8c19-0bb4a4498167" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/check/info/CheckParsingInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Финальный проект.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Финальный проект.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/check/info/CheckParsingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/check/info/CheckParsingInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/create/file/CreateFileReports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/create/file/CreateFileReports.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/create/info/GenerateInfoInFileReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/create/info/GenerateDateInFileReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/folders/input/second.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/folders/input/third.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/name/file/GenerateOutputFileName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/name/file/GenerateArchiveFileName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parsing/file/DOMProjectParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parsing/file/DOMProjectParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/user/selection/UserSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/user/selection/UserSelection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +76,7 @@
       <recent name="C:\Users\ivank\IdeaProjects\TeachMeSkills_First_Final_Project\src\main\java\org\example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CheckParsingInfo">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="CheckParsingInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.check.info.CheckParsingInfo" />
       <module name="TeachMeSkills_First_Final_Project" />
@@ -97,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenerateListTXT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.list.txt.GenerateListTXT" />
+    <configuration name="DOMProjectParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.parsing.file.DOMProjectParser" />
       <module name="TeachMeSkills_First_Final_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.list.txt.*" />
+          <option name="PATTERN" value="org.example.parsing.file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.CheckParsingInfo" />
+        <item itemvalue="Application.DOMProjectParser" />
         <item itemvalue="Application.CreateFileReports" />
         <item itemvalue="Application.GenerateOutputFileName" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.GenerateListTXT" />
       </list>
     </recent_temporary>
   </component>
